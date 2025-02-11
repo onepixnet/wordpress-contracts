@@ -6,25 +6,11 @@ namespace OnePix\WordPressContracts;
 
 interface StylesRegistrar
 {
-    /**
-     * @param  non-empty-string  $handle
-     * @param  non-empty-string  $src
-     * @param  array[]  $deps
-     */
-    public function registerStyle(string $handle, string $src, array $deps = []): bool;
+    public function registerStyle(Script $script): bool;
 
-    /**
-     * @param  non-empty-string  $handle
-     */
-    public function enqueueStyle(string $handle, mixed ...$args): bool;
+    public function enqueueStyle(Script $script): bool;
 
-    /**
-     * @param  non-empty-string  $handle
-     */
-    public function deregisterStyle(string $handle): bool;
+    public function deregisterStyle(Script $script): bool;
 
-    /**
-     * @param  non-empty-string  $handle
-     */
-    public function dequeueStyle(string $handle): bool;
+    public function dequeueStyle(Script $script): bool;
 }
