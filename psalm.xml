@@ -40,5 +40,7 @@
         <PossiblyUnusedMethod errorLevel="suppress"/>
         <PropertyNotSetInConstructor errorLevel="suppress"/>
         <MixedAssignment errorLevel="suppress"/>
+
+        <UnusedClass errorLevel="suppress" />
     </issueHandlers>
 </psalm>
