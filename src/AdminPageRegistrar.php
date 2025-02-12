@@ -14,13 +14,13 @@ interface AdminPageRegistrar
 
     public function getMenuSlug(): string;
 
-    public function getCallback(): string;
+    public function getParentSlug(): ?string;
 
-    public function getIconUrl(): string;
+    public function printContent(): void;
+
+    public function getIconUrl(): ?string;
 
     public function getPosition(): ?int;
-
-    public function getParentSlug(): ?string;
 
     public function getPageHookName(): string;
 }
