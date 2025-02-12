@@ -6,5 +6,8 @@ namespace OnePix\WordPressContracts;
 
 interface FiltersDispatcher
 {
-    public function apply(string $hook, mixed $value, mixed ...$args): void;
+    /**
+     * @param  non-empty-string  $hook
+     */
+    public function apply(string $hook, mixed $value, mixed ...$args): mixed;
 }

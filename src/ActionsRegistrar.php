@@ -8,13 +8,12 @@ interface ActionsRegistrar
 {
     /**
      * @param  non-empty-string  $hook
-     * @param  callable(mixed):void  $callback
+     * @param  callable  $callback
      */
     public function add(string $hook, callable $callback, int $priority = 10, int $acceptedArgs = 1): void;
 
     /**
      * @param  non-empty-string  $hook
-     * @param  callable(mixed):void  $callback
      */
     public function remove(string $hook, callable $callback, int $priority = 10): void;
 
