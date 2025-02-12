@@ -10,5 +10,7 @@ interface ActionsRegistrar
 
     public function remove(string $hook, callable $callback, int $priority = 10): void;
 
-    public function has(string $hook, callable|string|false $callback = false): bool;
+    public function has(string $hook, callable $callback): bool;
+
+    public function hasAny(string $hook):bool;
 }
