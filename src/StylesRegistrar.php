@@ -4,13 +4,27 @@ declare(strict_types=1);
 
 namespace OnePix\WordPressContracts;
 
-interface StylesRegistrar
+interface Style
 {
-    public function registerStyle(Script $script): bool;
+    /**
+     * @return non-empty-string
+     */
+    public function getHandle(): string;
 
-    public function enqueueStyle(Script $script): bool;
+    /**
+     * @return non-empty-string
+     */
+    public function getSrc(): string;
 
-    public function deregisterStyle(Script $script): bool;
+    /**
+     * @return string[]
+     */
+    public function getDeps(): array;
 
-    public function dequeueStyle(Script $script): bool;
+    /**
+     * @return non-empty-string
+     */
+    public function getVersion(): string;
+
+    public function getMedia(): string;
 }
