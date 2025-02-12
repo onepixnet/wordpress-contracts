@@ -1,7 +1,7 @@
 {
   "name": "onepix/wordpress-contracts",
   "description": "A set of abstractions for WordPress functions and classes",
-  "keywords": ["abstractions", "contracts", "decoupling", "interfaces", "interoperability", "standards", "dev"],
+  "keywords": ["abstractions", "contracts", "decoupling", "interfaces", "interoperability", "standards"],
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/onepixnet/wordpress-contracts",
