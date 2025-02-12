@@ -12,5 +12,5 @@ interface ActionsRegistrar
 
     public function has(string $hook, callable $callback): bool;
 
-    public function hasAny(string $hook):bool;
+    public function hasAny(string $hook): bool;
 }

@@ -16,8 +16,5 @@ interface Style
      */
     public function getSrc(): string;
 
-    /**
-     * @return array
-     */
     public function getDeps(): array;
 }
