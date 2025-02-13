@@ -23,7 +23,7 @@ interface AdminPage
     public function getPosition(): ?int;
 
     /**
-     * Simply use @see \OnePix\WordPressContractsImplementation\get_plugin_page_hookname
+     * Simply use get_plugin_page_hookname or \OnePix\WordPressContractsImplementation\get_admin_page_hook_name
      */
     public function getPageHookName(): string;
 
