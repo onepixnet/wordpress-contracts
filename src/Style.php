@@ -16,5 +16,15 @@ interface Style
      */
     public function getSrc(): string;
 
+    /**
+     * @return string[]
+     */
     public function getDeps(): array;
+
+    /**
+     * @return non-empty-string
+     */
+    public function getVersion(): string;
+
+    public function getMedia(): string;
 }
