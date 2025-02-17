@@ -8,7 +8,6 @@ interface ActionsRegistrar
 {
     /**
      * @param  non-empty-string  $hook
-     * @param  callable  $callback
      */
     public function add(string $hook, callable $callback, int $priority = 10, int $acceptedArgs = 1): void;
 
